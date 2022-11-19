@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{font-size:2em;}
+p{font-size: 1.25em;}
+
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.0em;
+    font-weight: bold;
+    padding: 5px 30px;
+    
+    box-shadow: 1px 1px 2px black;
+    color:white;
+    background-color: #5A5F37
+;
+
+} 
+
+button:hover{
+    background-color: #919636;
+    color: black;
+    box-shadow: 1px 1px 2px rgb(143, 180, 157);
+     
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color:#F1B24A;}
+
+header{
+    background-color: #4D774E;
+}
+
+header .logo{
+    margin:0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #FFFAE1;
+    font-size: 1.6em;
+} 
+
+header .container{
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px 12px ;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color:#FFFAE1;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://img10.naventcdn.com/avisos/11/00/63/50/86/11/720x532/304471074.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center,center;
+       
+}
+
+#hero h1{
+    color:#FFFAE1;
+    
+}
+
+#hero button{
+    font-size: 1.35em;
+    margin-top: 30px;
+}
+
+#amor .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Opciones{
+    background-color:#9DC88D;
+    color: #FFFAE1;
+    text-align: center;
+}
+
+#Opciones button{
+    margin-top: 1em;
+}
+
+
+
+#Opciones .container{
+    padding: 100px  12px;
+
+}
+
+#Opciones h3 {
+    margin-top: 0;
+    font-size: 35.5px;
+}
+
+#Opciones p{
+    display: none;
+}
+
+#Opciones .carta{
+    background-position: center,center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+
+)
+,url("https://acortar.link/NHblWE");
+
+}
+
+
+
+.carta:nth-child(2){
+background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://acortar.link/wTcGjn");
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://acortar.link/S6yZI7");
+    background-position: center center !important;
+
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 17px 0px;
+    font-weight: bold;
+}
+
+#abajo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #9DC88D ;
+    color:black;
+    height: 1vh;
+}
+
+
+
+
+#abajo h2{
+    font-size: 9vw;
+}
+
+#abajo button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: #9DC88D;
+}
+
+footer p{
+    margin:0;
+    padding: 12px;
+    color:#5A5F37;
+}
+
+footer .container{
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+
+    }
+
+    #amor .container{
+      display:flex;
+      justify-content: space-evenly;
+    }
+
+#amor .texto{
+    width: 50%;
+    max-width: 600px;
+    width: 50%;
+    padding-left: 30px;
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#amor h2{
+    margin-top:0px ;
+}
+
+    #amor .imgdentro{
+     background-image: url("https://acortar.link/p9piPB");
+      background-size: cover;
+      background-position: center center;
+      height: 500px;
+      width: 400px;
+    }
+
+    #Opciones .conjuntocartas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Opciones p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+  
+    #Opciones h3{
+        margin-top: 0;
+    }
+
+    #Opciones .carta{
+        padding: 50px;
+
+    }
+
+    #caracteristicas{
+     background-image: url("https://acortar.link/0VhjQp");
+     background-repeat: no-repeat;
+     background-size: 500px 400px;
+     background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+       text-align: initial; 
+    }
+
+    #carateristicas ul{
+        margin-left: 100px;
+    }
+
+    #abajo h2{
+      font-size: 2em;
+      margin-top: 5em;
+      margin-bottom: 1em;
+    }
+
+    #abajo button{
+        font-size: 1em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+
+}
+
+@media(min-width:1200px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
